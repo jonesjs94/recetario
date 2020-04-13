@@ -1,0 +1,7 @@
+GET https://api.spoonacular.com/recipes/search?query=pasta&instructionsRequired=true&number=1&apiKey=03d842cc1cbc4535bf140ca81c4578ac
+Content-Type: application/json
+
+###
+
+GET https://api.spoonacular.com/recipes/random?number=5&tags=chicken,&apiKey=03d842cc1cbc4535bf140ca81c4578ac
+Content-Type: application/json

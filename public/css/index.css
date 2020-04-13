@@ -1,0 +1,264 @@
+/*
+ * FONT: https://fonts.google.com/specimen/Literata
+*/
+@font-face {
+    font-family: "Literata";
+    src: url(static/Literata-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Literata";
+    src: url(static/Literata-Bold.ttf) format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Literata";
+    src: url(static/Literata-Italic.ttf) format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+/****************/
+
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background: #faeee7;
+    color: #594a4e;
+    font-family: "Literata",  Georgia, serif;
+}
+
+div.container {
+    min-height: 100%;
+}
+
+div.buscador {
+    width: 70%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+div.buscador h1 {
+    color: #33272a;
+    font-size: 50px;
+    text-align: center;
+}
+
+div.buscador button {
+    display: block;
+    margin: 10px auto 0 auto;
+    width: 40%;
+}
+
+/* Contenedor Resultados */
+#resultados {
+    margin: 50px 100px;
+}
+
+#resultados div.resultado {
+    margin-bottom: 40px;
+    background-color: #fffffe;
+    border: 1px solid rgb(0,0,0,.125);
+}
+
+div.resultado {
+    opacity: 0;
+}
+
+div.resultado .col-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div.resultado .col-2 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+div.resultado .col-2 i {
+    color: orange;
+    font-size: 23px;
+}
+
+div.resultado .col-6 div {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Iconos */
+div.resultado i {
+    font-size: 23px;
+    margin-right: 5px;
+}
+
+.fa-star {
+    color: orange;
+}
+.fa-check {
+    color: green;
+}
+
+
+
+/* Error */
+#contenedor-error {
+    display: none;
+}
+
+#contenedor-error p {
+    text-align: center;
+}
+
+.gg-smile-sad { 
+    --ggs: 5;
+    left: 49%;
+    top: 50px;    
+ }
+
+
+/* Recete */
+#receta {
+    display: none;
+    overflow: auto;
+    position: fixed;
+    opacity: 0;
+    height: 100%;
+    max-width: 100% !important;
+    background: white;
+    top: 0;
+    left: 0;
+}
+
+#receta > .row {
+    min-height: 100%;
+}
+
+#receta div.resumen {
+    background-color: #faeee7;
+}
+
+#receta div.detalles {
+    background-color: #fffffe;
+}
+
+#receta h3 {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#receta img.img-comida {
+    align-self: center;
+}
+
+#receta div.ingredientes {
+    text-align: center;
+}
+
+#receta div.ingredientes .col-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#receta div.ingredientes img {
+    align-self: center;
+}
+
+#receta div.ingredientes p {
+    margin-bottom: 0;
+}
+
+#receta div.ingredientes p:last-child {
+    font-size: 90%;
+}
+
+#receta button {
+    position: fixed;
+    top: 5px;
+    right: 20px;
+    z-index: 2;
+}
+
+
+/* Clases */
+.btn-rosado {
+    background-color: #ff8ba7;
+    color: white;
+    border: 2px solid black;
+    font-weight: bold;
+}
+
+.btn-rosado:hover {
+    color: #33272a;
+    background-color: #f86b8c;
+}
+
+
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    #receta h3 {
+        font-size: 1.25rem;
+        margin-top: 1rem;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    div.buscador {
+        width: initial;
+    }
+
+    div.buscador h1 {
+        font-size: 40px;
+    }
+
+    #receta img.img-comida {
+        margin-bottom: 1rem;
+    }
+
+    #receta p.resumen {
+        font-size: 90%;
+        padding: .5rem 1rem;
+    }
+    
+    #receta button {
+        padding: 3px 8px;
+        font-size: .75rem;
+        right: 5px;
+    }
+    
+    
+    #receta div.col-xl-4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #receta img {
+        align-self: center;
+    }
+
+    .ingredientes .row div {
+        margin-top: 1rem;
+    }
+
+    .instrucciones li {
+        font-size: 15px;
+    }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    
+}

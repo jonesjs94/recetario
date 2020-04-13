@@ -1,0 +1,51 @@
+<%- include("partials/header") %>
+
+<div class="container">
+
+    <!-- BUSCADOR -->
+    <div class="buscador">
+        <h1 class="my-5">Random Recipes</h1>
+        <div class="row no-gutters">
+            <div class="col-md-8">
+                <input class="form-control" id="input" type="text" name="recipe" autocomplete="off" placeholder="" required>
+            </div>
+            <div class="col-md-4">
+                <select class="custom-select" id="comidas" name="comidas">
+                    <option hidden="hidden">Elige tu plato del día ...</option>
+                    <option value="x">¡Todos!</option>
+                    <option value="main course">Platos principales</option>
+                    <option value="breakfast">Desayunos</option>
+                    <option value="side dish">Guarniciones</option>
+                    <option value="dessert">Postres</option>
+                    <option value="salad">Ensaladas</option>
+                    <option value="soup">Sopas</option>
+                    <option value="sauce">Salsas</option>
+                    <option value="snack">Bocadillo</option>
+                    <option value="appetizer">Aperitivo</option>
+                </select>                
+            </div>
+            <div class="col">
+                <button id="descubrir" type="button" class="btn btn-rosado" onclick="encontrarRecetas()">Descubrir</button>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- RESULTADOS -->
+    <div id="resultados">
+
+        <div id="contenedor-error">
+            <p class="h2">No recipes here!</p>
+            <p>Try with other ingrdients or type of meal</p>
+            <i class="gg-smile-sad"></i>
+        </div>
+    </div>
+
+    <!-- RECETA -->
+    <div class="container-fluid" id="receta">
+    </div>
+    
+</div>
+
+<%- include("partials/footer") %>
