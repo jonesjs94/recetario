@@ -5,3 +5,5 @@ Aplicación sencilla con la utilización de una API. Trae 5 recetas en base a un
 API: https://spoonacular.com/food-api/
 
 Probala acá: https://recetario-aleatorio-app.herokuapp.com/
+
+Al estar alojada en Heroku, puede tardar hasta 10 segundos en "despertar" la App.
