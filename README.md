@@ -6,4 +6,4 @@ API: https://spoonacular.com/food-api/
 
 Probala acá: https://recetario-aleatorio-app.herokuapp.com/
 
-IMPORTANTE: Al estar alojada en Heroku, puede tardar hasta 10 segundos en "despertar" la App.
+IMPORTANTE: Al estar alojada en Heroku, puede tardar hasta 10 segundos en "despertarse" la App.
